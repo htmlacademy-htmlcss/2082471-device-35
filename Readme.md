@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Valentina Karpova](https://up.htmlacademy.ru/htmlcss/35/user/2082471).
-* Наставник: Ирина Малиновская.
+* Наставник: [Ирина Малиновская](https://htmlacademy.ru/profile/irina-malinovskaya).
 
 ---
 
