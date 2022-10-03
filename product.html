@@ -10,7 +10,7 @@
         <header class="page-header">
             <div class="page-header-row">
                 <a class="logo" href="index.html">
-                    <img class="logo-image" src="" alt="Логотип интернет-магазина Device">
+                    <img class="logo-image" src="images/logo-black.svg" width="145"  height="36" alt="Логотип интернет-магазина Device">
                 </a>
                 <form class="page-header-row-form" action="https://echo.htmlacademy.ru/" method="post">
                     <label>
@@ -136,7 +136,8 @@
                     </fieldset>
                 </form>
 
-                <article class="sorting">
+                <section class="sorting">
+                  <!--тег acticle заменида на тег section. Получилось два section, вложенных друг в друга.-->
                     <h2>Сортировка:</h2>
                     <select class="select-control" aria-label="Сортировка">
                         <option value="popular">Популярные</option>
@@ -152,7 +153,7 @@
                     <ul class="product-list">
                         <li class="product-card">
                             <a class="product-card-link" href="product.html">
-                                <img class="product-card-image" src="" alt="Любительская селфи-палка">
+                                <img class="product-card-image" src="image/product/product-1.jpg" width="360"  height="380" alt="Любительская селфи-палка">
                                 <h3 class="product-card-title">Любительская селфи-палка</h3>
                                 <span class="product-card-price">500 ₽</span>
                             </a>
@@ -160,7 +161,7 @@
 
                         <li class="product-card">
                             <a class="product-card-link" href="product.html">
-                                <img class="product-card-image" src="" alt="Профессиональная селфи-палка">
+                                <img class="product-card-image" src="image/product/product-2.jpg" width="360"  height="380"" alt="Профессиональная селфи-палка">
                                 <h3 class="product-card-title">Профессиональная селфи-палка</h3>
                                 <span class="product-card-price">1500 ₽</span>
                             </a>
@@ -168,7 +169,7 @@
 
                         <li class="product-card">
                             <a class="product-card-link" href="product.html">
-                                <img class="product-card-image" src="" alt="Непотопляемая селфи-палка">
+                                <img class="product-card-image" src="image/product/product-3.jpg" width="360"  height="380"" alt="Непотопляемая селфи-палка">
                                 <h3 class="product-card-title">Непотопляемая селфи-палка</h3>
                                 <span class="product-card-price">2500 ₽</span>
                             </a>
@@ -176,7 +177,7 @@
 
                         <li class="product-card">
                             <a class="product-card-link" href="product.html">
-                                <img class="product-card-image" src="" alt="Селфи-палка «Следуй за мной">
+                                <img class="product-card-image" src="image/product/product-4.jpg" width="360"  height="380"" alt="Селфи-палка «Следуй за мной">
                                 <h3 class="product-card-title">Селфи-палка «Следуй за мной</h3>
                                 <span class="product-card-price">1500 ₽</span>
                             </a>
@@ -214,17 +215,18 @@
                     </ul>
                     <button class="button pagination-show-more" type="button">Показать ещё</button>
 
-                </article>
+                  </section>
             </section>
         </main>
 
         <footer class="page-footer">
             <div class="footer-contacts">
-                <img class="footer-contacts-logo" src="" alt="Логотип интернет-магазина Device">
+                <img class="footer-contacts-logo" src="images/logo-yellow.svg" width="145"  height="36" alt="Логотип интернет-магазина Device">
                 <address class="footer-contacts-address">
-                    <p class="contacts-address-text contacts-address-text-footer">Санкт-Петербург, набережная реки
+                  <!--заменила тег p на тег span. Так лучше?-->
+                    <span class="contacts-address-text contacts-address-text-footer">Санкт-Петербург, набережная реки
                         Карповки, 5,
-                        литера П.</p>
+                        литера П.</span>
                 </address>
             </div>
 
@@ -265,7 +267,7 @@
                     <a class="contacts-phone contacts-phone-footer" href="tel:+78128121212">+7 812 812-12-12</a>
                 </address>
                 <a class="htmlacademy-link" href="https://htmlacademy.ru/">
-                    <img src="" alt="Логотип HTML-академии">
+                    <img src="images/logo-html-academy.svg" width="115"  height="33" alt="Логотип HTML-академии">
                 </a>
             </div>
         </footer>
