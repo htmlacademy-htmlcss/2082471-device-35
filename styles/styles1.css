@@ -73,7 +73,6 @@ body {
 .button-footer {
   color: #FFFFFF;
 }
-
 /*
 .container {
   width: 1460px;
@@ -88,6 +87,8 @@ body {
   flex-grow: 1;
 }
 */
+
+
 
 .main-index {
   width: 1440px;
@@ -184,7 +185,6 @@ body {
 
 .user-list {
   margin: 0;
-  padding: 0;
   display: flex;
   justify-content: flex-end;
   list-style-type: none;
@@ -257,6 +257,12 @@ body {
   padding-right: 1px;
 }
 
+
+
+
+
+
+
 /*promo-products БЛОК со слайдером*/
 
 .promo-products {
@@ -266,6 +272,7 @@ body {
 
   outline: 5px solid rgba(28, 24, 94, 0.5);
   outline-offset: -5px;
+
 }
 
 .promo-product-button {
@@ -369,9 +376,12 @@ body {
 }
 
 .promo-product-pagination {
-  position: absolute;
-  top: 78%;
-  left: 44%;
+position: absolute;
+top: 78%;
+left: 44%;
+
+
+
 }
 
 
@@ -380,6 +390,8 @@ body {
   justify-content: center;
   list-style-type: none;
 }
+
+
 
 .indicators-item {
   margin-right: 20px;
@@ -392,6 +404,10 @@ body {
 .indicators-button-current {
   background-color: #000000;
 }
+
+
+
+
 
 
 /*products-categories БЛОК Категория товаров*/
@@ -525,12 +541,15 @@ body {
 }
 
 .services-image {
+
   width: 136px;
   height: 164px;
+
 }
 
 .services-text {
   width: 694px;
+
 }
 
 /*advantage БЛОК Доставим редкий товар под заказ*/
@@ -663,6 +682,7 @@ body {
   margin-bottom: 15px;
 }
 
+
 .contacts-address {
 
   margin: 0;
@@ -670,6 +690,7 @@ body {
 
   outline: 5px solid rgba(252, 135, 2, 0.5);
   outline-offset: -5px;
+
 }
 
 .text-address {
@@ -723,6 +744,7 @@ body {
 }
 
 
+
 /*subsribe    БЛОК Подпишитесь на рассылку*/
 
 .container-subscribe {
@@ -741,6 +763,7 @@ body {
 
   outline: 5px solid rgba(252, 135, 2, 0.5);
   outline-offset: -5px;
+
 }
 
 . title-subscribe {
@@ -806,11 +829,14 @@ body {
   width: 1160px;
   display: flex;
   justify-content: space-between;
+
+
 }
 
 .footer-contacts-1 {
   width: 239px;
   margin-right: 119px;
+
 }
 
 .logo-footer {
@@ -831,6 +857,7 @@ body {
 
   outline: 2px solid rgba(252, 135, 2, 0.5);
   outline-offset: -2px;
+
 }
 
 .footer-contacts-2 {
@@ -859,6 +886,10 @@ body {
   margin-right: 0;
 }
 
+
+
+
+
 .footer-social-list {
   margin: 0;
   padding: 0;
@@ -868,6 +899,7 @@ body {
 
   outline: 2px solid rgba(252, 135, 2, 0.5);
   outline-offset: -2px;
+
 }
 
 .footer-social-item {
@@ -884,6 +916,14 @@ body {
 }
 
 
+/*
+.footer-social-button {
+background-position: 50% 50%;
+}
+*/
+
+
+
 .footer-contacts-3 {
   width: 175px;
   text-align: right;
@@ -895,10 +935,12 @@ body {
 .text-phone-footer {
   color: #FFFFFF;
   margin-bottom: 63px;
+
 }
 
 .contacts-address {
   margin-bottom: 63px;
+
 }
 
 .contacts-phone-footer {
@@ -980,6 +1022,8 @@ body {
 }
 
 
+
+
 /*Block sorting*/
 
 .sorting {
@@ -1000,6 +1044,7 @@ body {
 
   outline: 5px solid rgba(180, 17, 55, 0.5);
   outline-offset: -5px
+
 }
 
 .product-filter-title,
@@ -1028,6 +1073,8 @@ body {
   border: none;
   outline: 1px solid rgba(82, 17, 180, 0.5);
   outline-offset: -1px;
+
+
 }
 
 .button-sort-up {
@@ -1036,17 +1083,20 @@ body {
 }
 
 
+
+
 /*product-list*/
 
 .product-list {
   margin: 0;
   padding: 0;
-  list-style-type: none;
+  list-style: none;
   display: flex;
   flex-wrap: wrap;
   padding: 70px 40px;
   justify-content: flex-start;
   width: 760px;
+
   background-color: #FFFFFF;
 }
 
@@ -1143,13 +1193,17 @@ body {
   line-height: 20px;
   text-align: centert;
   color: #444444;
+
   text-decoration: none;
+
 }
+
 
 
 .select-control {
   color: #000000;
 }
+
 
 .product-filter-list {
   list-style: none;

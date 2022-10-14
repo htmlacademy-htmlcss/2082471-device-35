@@ -65,24 +65,24 @@
     </header>
 
 
-    <main class="container main-index">
+    <main class="container main-index ">
       <h1 class="visually-hidden">Интернет-магазин "Device"</h1>
 
       <section class="promo-products">
         <h2 class="visually-hidden">Продвижение товара</h2>
 
 
-        <div class="promo-product-button">
-          <button class="button-prev" type="button">
+        <div class="promo-product-arrow">
+          <button class="arrow-prev" type="button">
             <span class="visually-hidden">Предыдущее фото</span>
           </button>
-          <button class="button-next" type="button">
+          <button class="arrow-next" type="button">
             <span class="visually-hidden">Следующее фото</span>
           </button>
         </div>
 
         <div class="promo-product">
-          <div class="promo-product-image">
+          <div class="promo-product-slider">
             <img src="images/promo-products/slider-1.png" width="560" height="560" alt="квадрокоптер c мощным лазером, замаскированным под
               стандартную камеру">
           </div>
@@ -287,7 +287,7 @@
         </ul>
       </section>
 
-      <section class="container">
+      <section class="container container-services">
         <h2 class="visually-hidden">Доставка. Гарантия. Кредит</h2>
         <div class="services">
           <div class="container-button">
@@ -336,51 +336,44 @@
             </li>
             -->
           </ul>
-
         </div>
-
       </section>
 
       <section class="advantage">
         <h2 class="visually-hidden">Доставка редкого товара под заказ</h2>
-        <div class="container">
-          <div class="advantage-image">
-            <img class="advantage-logo visually-hidden" src="images/avto.svg" width="47" height="31"
-              alt="Логотип Грузовая машина">
-            <svg width="47" height="31" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="m46.7 15.4-6.5-8.2c-.3-.4-.7-.6-1.2-.6h-8.3V1.5C30.7.7 30 0 29.2 0H1.5C.7 0 0 .7 0 1.5S.7 3 1.5 3h26.2v21.7H15.8c-.6-1.9-2.4-3.3-4.5-3.3-2.6 0-4.8 2.2-4.8 4.8 0 2.6 2.2 4.8 4.8 4.8 2.1 0 3.9-1.4 4.5-3.3h13.4c.8 0 1.5-.7 1.5-1.5V9.6h7.6l5.7 7.3v7.9h-2.2c-.6-1.9-2.4-3.3-4.5-3.3-2.6 0-4.8 2.2-4.8 4.8 0 2.6 2.1 4.8 4.8 4.8 2.1 0 3.9-1.4 4.5-3.3h3.7c.8 0 1.5-.7 1.5-1.5v-9.9c0-.4-.1-.7-.3-1ZM11.3 28c-1 0-1.8-.8-1.8-1.8s.8-1.8 1.8-1.8 1.8.8 1.8 1.8-.9 1.8-1.8 1.8Zm26.1 0c-1 0-1.8-.8-1.8-1.8s.8-1.8 1.8-1.8 1.8.8 1.8 1.8-.9 1.8-1.8 1.8Z"
-                fill="#000" />
-              <path
-                d="M19.4 9.6c.8 0 1.5-.7 1.5-1.5s-.7-1.5-1.5-1.5H4.8c-.8 0-1.5.7-1.5 1.5S4 9.6 4.8 9.6h14.6ZM17.7 14.7c0-.8-.7-1.5-1.5-1.5H1.5c-.8 0-1.5.7-1.5 1.5s.7 1.5 1.5 1.5h14.7c.8 0 1.5-.7 1.5-1.5Z"
-                fill="#000" />
-            </svg>
-          </div>
 
-
-
-          <p class="text-advantage">Доставим редкий товар под заказ</p>
-          <div class="advantage-wrapper">
-            <a class="advantage-link" href="">
-              <img class="advantage-information visually-hidden" src="images/icon-information.svg" width="40"
-                height="40" alt="Информация по доставке редкого товара под заказ">
-              <svg width="2" height="12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g opacity=".3" clip-path="url(#a)" fill="#000">
-                  <path d="M2 0H0v2h2V0ZM2 4H0v8h2V4Z" />
-                </g>
-                <defs>
-                  <clipPath id="a">
-                    <path fill="#fff" d="M0 0h2v12H0z" />
-                  </clipPath>
-                </defs>
-              </svg>
-            </a>
-          </div>
+        <div class="advantage-image">
+          <img class="advantage-logo visually-hidden" src="images/avto.svg" width="47" height="31"
+            alt="Логотип Грузовая машина">
+          <svg width="47" height="31" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="m46.7 15.4-6.5-8.2c-.3-.4-.7-.6-1.2-.6h-8.3V1.5C30.7.7 30 0 29.2 0H1.5C.7 0 0 .7 0 1.5S.7 3 1.5 3h26.2v21.7H15.8c-.6-1.9-2.4-3.3-4.5-3.3-2.6 0-4.8 2.2-4.8 4.8 0 2.6 2.2 4.8 4.8 4.8 2.1 0 3.9-1.4 4.5-3.3h13.4c.8 0 1.5-.7 1.5-1.5V9.6h7.6l5.7 7.3v7.9h-2.2c-.6-1.9-2.4-3.3-4.5-3.3-2.6 0-4.8 2.2-4.8 4.8 0 2.6 2.1 4.8 4.8 4.8 2.1 0 3.9-1.4 4.5-3.3h3.7c.8 0 1.5-.7 1.5-1.5v-9.9c0-.4-.1-.7-.3-1ZM11.3 28c-1 0-1.8-.8-1.8-1.8s.8-1.8 1.8-1.8 1.8.8 1.8 1.8-.9 1.8-1.8 1.8Zm26.1 0c-1 0-1.8-.8-1.8-1.8s.8-1.8 1.8-1.8 1.8.8 1.8 1.8-.9 1.8-1.8 1.8Z"
+              fill="#000" />
+            <path
+              d="M19.4 9.6c.8 0 1.5-.7 1.5-1.5s-.7-1.5-1.5-1.5H4.8c-.8 0-1.5.7-1.5 1.5S4 9.6 4.8 9.6h14.6ZM17.7 14.7c0-.8-.7-1.5-1.5-1.5H1.5c-.8 0-1.5.7-1.5 1.5s.7 1.5 1.5 1.5h14.7c.8 0 1.5-.7 1.5-1.5Z"
+              fill="#000" />
+          </svg>
         </div>
-
+        <p class="title title-advantage">Доставим редкий товар под заказ</p>
+        <div class="advantage-wrapper">
+          <a class="advantage-link" href="">
+            <img class="advantage-information visually-hidden" src="images/icon-information.svg" width="40" height="40"
+              alt="Информация по доставке редкого товара под заказ">
+            <svg width="2" height="12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g opacity=".3" clip-path="url(#a)" fill="#000">
+                <path d="M2 0H0v2h2V0ZM2 4H0v8h2V4Z" />
+              </g>
+              <defs>
+                <clipPath id="a">
+                  <path fill="#fff" d="M0 0h2v12H0z" />
+                </clipPath>
+              </defs>
+            </svg>
+          </a>
+        </div>
       </section>
 
-      <section class="container container-contacts">
+      <section class="container-contacts">
 
         <h2 class="visually-hidden">О нас. Контакты</h2>
         <div class="about-us">
@@ -402,9 +395,12 @@
           <p class="text text-contacts">Вы можете забрать товар сами, заехав в наш офис. Заодно сможете проверить
             работоспособность покупки.</p>
           <h4 class="text text-subtitle">Интернет-магазин «Девайс»</h4>
+
           <address class="contacts-address">
             <p class="text text-address">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+
             <a class="text text-phone" href="tel:+78128121212">+7 812 812-12-12</a>
+
           </address>
 
           <h4 class="text text-subtitle">Время работы</h4>
@@ -417,9 +413,9 @@
 
       </section>
 
-      <section class=" container container-subscribe">
-        <h2 class="title title-subscribe visually-hidden">Подпишитесь на рассылку</h2>
-        <!--<div class=" container container-subscribe">-->
+      <section class="container container-subscribe">
+
+        <h2 class="title title-subscribe visually-hidden">Подписка на рассылку</h2>
         <div class="subscribe">
           <h3 class="title title-subscribe">Подпишитесь на рассылку</h3>
           <p class="text text-subscribe">Еженедельный дайджест с обзорами новинок, длительными тест-драйвами,
@@ -434,15 +430,16 @@
           </form>
           <span class="text text-email">Это бесплатно</span>
         </div>
-        <!--</div>-->
+
+
       </section>
     </main>
 
 
 
 
-    <footer class="page-footer">
-      <div class="container container-footer">
+    <footer class="container page-footer">
+      <div class="container-footer">
         <div class="footer-contacts footer-contacts-1">
           <div class="logo-footer">
             <svg width="145" height="36" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -525,6 +522,16 @@
         </div>
       </div>
     </footer>
+
+
+
+
+
+
+
+
+
+
   </body>
 
 </html>
