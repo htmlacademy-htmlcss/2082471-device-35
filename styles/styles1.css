@@ -491,7 +491,7 @@ left: 44%;
   justify-content: center;
   margin-top: auto;
   margin-bottom: auto;
-  align-items: center;
+  align-items: flex-start;
   border-right: 7px solid black;
 
   outline: 5px solid rgba(252, 135, 2, 0.5);
@@ -501,18 +501,26 @@ left: 44%;
 .services-button {
   display: block;
   margin-bottom: 35px;
-  padding: 9px 120px 11px 0;
-  color: #000000;
+  padding: 10px 3.64px;
+  box-sizing: border-box;
   width: 160px;
-  height: 20px;
+  height: 40px;
+  text-align: left;
   color: #000000;
+  border: none;
   background: linear-gradient(to top,
-      #FFFFFF 40%, #FFE17F 40% 60%, #FFFFFF 60%);
+  #F0F0F0 40%, #FFE17F 40% 60%, #F0F0F0 60% 100%);
 }
 
 .services-button-current {
+
+  padding: 9px 120px 11px 0;
+  box-sizing: border-box;
+  width: 280px;
+  height: 40px;
+  border: none;
   color: #FFE17F;
-  background-color: #000000;
+  background: #000000;
 }
 
 .services-list {
@@ -827,8 +835,9 @@ left: 44%;
 .container-footer {
   margin: 0 auto;
   width: 1160px;
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 2;
 
 
 }
