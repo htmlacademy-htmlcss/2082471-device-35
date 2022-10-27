@@ -82,6 +82,8 @@ body {
 
 .main-index {
   flex-grow: 1;
+  background: linear-gradient(to bottom,
+       #FFE17F 150px, #FFFFFF 150px 100%);
 }
 
 .main-inner {
@@ -114,7 +116,7 @@ body {
   background: linear-gradient(to bottom,
       #FFFFFF 18px, #FFE17F 18px 100%);
 
-  background-color: #FFE17F;
+  /*round-color: #FFE17F;*/
 }
 
 .page-header-container {
@@ -125,9 +127,7 @@ body {
   box-sizing: border-box;
   min-height: 170px;
   color: #000000;
-
-  outline: 1px solid rgba(82, 17, 180, 0.5);
-  outline-offset: -1px;
+  z-index: 1;
 }
 
 .page-header::before {
@@ -490,20 +490,18 @@ top: 0;
 .promo-products {
   position: relative;
   margin-bottom: 70px;
-
-  outline: 5px solid rgba(28, 24, 94, 0.5);
-  outline-offset: -5px;
 }
 
-.promo-product .button {}
 
 .promo-product {
   position: relative;
+  padding-top: 150px;
+  margin-top: -150px;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
   background: linear-gradient(to bottom,
-      #FFE17F 150px, #FFFFFF 150px 100%);
+      #FFE17F 300px, #FFFFFF 150px 100%);
 }
 
 .promo-product-slider {
@@ -906,6 +904,65 @@ top: 0;
 
 
 /*advantage БЛОК Доставим редкий товар под заказ*/
+/*
+.advantage {
+
+  margin-bottom: 70px;
+  min-height: 100px;
+  background-color: #F0F0F0;
+}
+
+.advantage-link {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  display: block;
+  height: 100%;
+  text-decoration: none;
+
+}
+
+.title-advantage {
+  margin: 0;
+  padding: 40px 125px ;
+  font-size: 20px;
+  line-height: 23.48px;
+  text-align: center;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.advantage-link:before {
+  content: "";
+  position: absolute;
+  width: 125px;
+  height: 100px;
+  top: 0;
+  left: 0;
+  background-color: #FFE17F;
+  background-image: url("../images/avto.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.advantage-link:after {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 30px;
+  right: 42.5px;
+  border-radius: 50%;
+  background-color: rgba(220, 220, 220, 0.5);
+  background-image: url("../images/icon-information.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+*/
+
+
+
+
 
 .advantage {
   display: flex;
@@ -941,26 +998,35 @@ top: 0;
   width: 30px;
   height: 30px;
   text-align: center;
-  opacity: 0.3;
   border-radius: 50%;
-  background-color: rgba(220, 220, 220, 0.5);
+  /*background-color: rgba(220, 220, 220, 0.5);
+  background-image: url("../images/icon-information.svg");
+  background-repeat: no-repeat;
+  background-position: center center;*/
 }
 
-.advantage:focus {
+
+
+
+
+
+
+
+
+.advantage-link:focus .advantage {
   outline: 2px solid #af4fff;
+  outline-offset: 2px;
 }
 
-.advantage:hover .advantage-image {
+.advantage-link:hover .advantage-image {
   background-color: #FFC700;
 }
 
-.advantage:hover .icon-information svg {
+.advantage-link:hover .icon-information svg {
+  fill: #000000;
+  color:#000000;
   opacity: 1;
-  color: #000000;
 }
-
-
-
 
 .advantage:active {
   opacity: 30%;
@@ -1576,9 +1642,6 @@ input[type=email]:disabled {
   min-height: 1380px;
   display: flex;
   justify-content: space-between;
-
-  outline: 5px solid rgba(28, 180, 17, 0.5);
-  outline-offset: -5px
 }
 
 .filter {
@@ -1614,10 +1677,6 @@ input[type=email]:disabled {
 }
 
 
-
-
-
-
 /* Range */
 
 .product-filter-group-title {
@@ -1641,6 +1700,7 @@ input[type=email]:disabled {
 
 .range-toggle {
   position: absolute;
+  margin-bottom: 3px;
   width: 18px;
   height: 18px;
   box-sizing: border-box;
@@ -1676,20 +1736,21 @@ input[type=email]:disabled {
 .range-wrapper-inputs {
   position: relative;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 
 .catalog-filter-label {
   display: flex;
   justify-content: center;
-  margin-right: 5px;
+  margin-right: 67px;
+  margin-left: -13px;
+  font-size: 14px;
+  line-height: 20px;
+  color: rgba(0, 0, 0 0.3);
 }
 
 .range-input {
-  /*width: 28px;*/
-  padding: 0 1px;
-  font: inherit;
-  text-align: center;
+  padding: 0 3px;
   background-color: transparent;
   border: none;
   appearance: textfield;
@@ -1734,10 +1795,14 @@ input[type=email]:disabled {
   box-sizing: border-box;
   border-radius: 3px;
   border: 2px solid #CCCCCC;
+}
+
+.control-mark:checked {
   background-image: url("../images/tick-filter.svg");
   background-position: center;
   background-repeat: no-repeat;
 }
+
 
 .control:hover {
   opacity: 0.6;
@@ -1780,8 +1845,6 @@ input[type=email]:disabled {
   content: "";
 }
 
-
-
 .product-card-button {
   font-size: 16px;
   line-height: 19px;
@@ -1822,9 +1885,6 @@ input[type=email]:disabled {
   flex-direction: column;
   width: 840px;
   min-height: 1380px;
-
-  outline: 5px solid rgba(82, 17, 180, 0.5);
-  outline-offset: -5px;
 }
 
 .sorting-select {
@@ -1835,9 +1895,6 @@ input[type=email]:disabled {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-  outline: 5px solid rgba(180, 17, 55, 0.5);
-  outline-offset: -5px
 }
 
 
@@ -1872,6 +1929,7 @@ input[type=email]:disabled {
   background: transparent;
   /*appearance: none;*/
 }
+
 .select:focus .text-select {
   outline: 2px solid #af4fff;
   outline-offset: 2px;
@@ -1884,13 +1942,6 @@ input[type=email]:disabled {
 .select:active {
   opacity: 0.3;
 }
-
-
-
-
-
-
-
 
 
 
@@ -1923,8 +1974,6 @@ input[type=email]:disabled {
 .button-sort-down:active svg {
   fill: #000000;
 }
-
-
 
 
 /*product-list*/
