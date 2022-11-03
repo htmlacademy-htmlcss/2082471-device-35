@@ -18,8 +18,10 @@
         <div class="user-menu">
           <form class="form" action="https://echo.htmlacademy.ru/" method="post">
 
-            <label for="search"></label>
-            <input class="search" type="search" name="search" id="search" placeholder="Поиск по сайту">
+              <label for="search"></label>
+              <input class="search" type="search" name="search" id="search" placeholder="Поиск по сайту">
+
+
             <button class="text page-header-button" type="submit"><span>Найти</span></button>
           </form>
 
@@ -72,9 +74,11 @@
                 <div class="popover-content">
                   <ul class="cart-items-list">
                     <li class="cart-item">
-                      <img class="cart-item-image" src="images/product/product-1-small.png" width="39" height="43"
-                        alt="Любительская селфи-палка.">
-                      <span class="cart-item-name">Любительская <br> селфи-палка</span>
+                      <div class="cart-wrapper">
+                        <img class="cart-item-image" src="images/product/product-1-small.png" width="39" height="43"
+                          alt="Любительская селфи-палка.">
+                        <span class="cart-item-name">Любительская <br> селфи-палка</span>
+                      </div>
                       <button type="button" class="cart-item-button button">
                         <svg aria-hidden="true" focusable="false" width="10" height="11" fill="none"
                           xmlns="http://www.w3.org/2000/svg">
@@ -87,9 +91,11 @@
                     </li>
 
                     <li class="cart-item">
-                      <img class="cart-item-image" src="images/product/product-2-small.png" width="39" height="43"
-                        alt="Профессиональная селфи-палка.">
-                      <span class="cart-item-name">Профессиональная <br> селфи-палка</span>
+                      <div class="cart-wrapper">
+                        <img class="cart-item-image" src="images/product/product-2-small.png" width="39" height="43"
+                          alt="Профессиональная селфи-палка.">
+                        <span class="cart-item-name">Профессиональная <br> селфи-палка</span>
+                      </div>
                       <button type="button" class="cart-item-button button">
                         <svg aria-hidden="true" focusable="false" width="10" height="11" fill="none"
                           xmlns="http://www.w3.org/2000/svg">
@@ -388,7 +394,7 @@
 
               <div class="services-image">
                 <img class="services-image-1" src="images/services/service-1.svg" width="136" height="164"
-                  alt="Логотип сервиса Доставка" .>
+                  alt="Логотип сервиса Доставка.">
               </div>
             </li>
 
@@ -401,7 +407,7 @@
               </div>
               <div class="services-image">
                 <img class="services-image" src="images/services/service-2.svg" width="171" height="195"
-                  alt="Логотип сервиса Гарантия" .>
+                  alt="Логотип сервиса Гарантия.">
               </div>
             </li>
 
@@ -413,7 +419,7 @@
               </div>
               <div class="services-image">
                 <img class="services-image" src="images/services/service-3.svg" width="156" height="188"
-                  alt="Логотип сервиса Кредит" .>
+                  alt="Логотип сервиса Кредит.">
               </div>
             </li>
           </ul>
@@ -421,7 +427,7 @@
         </div>
       </section>
 
-      <section class="container">
+      <!--     <section class="container">
         <h2 class="visually-hidden">Доставка редкого товара под заказ</h2>
         <a class="advantage-link" href="">
           <div class="advantage">
@@ -454,15 +460,15 @@
             </div>
           </div>
         </a>
-      </section>
+      </section>-->
 
-      <!--
+
       <section class="container">
         <h2 class="visually-hidden">Доставка редкого товара под заказ</h2>
         <div class="advantage">
-        <a class="advantage-link" href="">
+          <a class="advantage-link" href="">
 
-          <div class="advantage-image">
+            <!--<div class="advantage-image">
               <svg aria-hidden="true" focusable="false" width="47" height="31" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -472,11 +478,11 @@
                   d="M19.4 9.6c.8 0 1.5-.7 1.5-1.5s-.7-1.5-1.5-1.5H4.8c-.8 0-1.5.7-1.5 1.5S4 9.6 4.8 9.6h14.6ZM17.7 14.7c0-.8-.7-1.5-1.5-1.5H1.5c-.8 0-1.5.7-1.5 1.5s.7 1.5 1.5 1.5h14.7c.8 0 1.5-.7 1.5-1.5Z"
                   fill="#000" />
               </svg>
-            </div>
+            </div>-->
 
-          <p class="title title-advantage">Доставим редкий товар под заказ</p>
+            <p class="title title-advantage">Доставим редкий товар под заказ</p>
 
-          <div class="icon-information">
+            <!--      <div class="icon-information">
              <svg aria-hidden="true" focusable="false" width="2" height="12" fill="black"
                 xmlns="http://www.w3.org/2000/svg">
                 <g opacity="1" clip-path="url(#a)">
@@ -489,17 +495,16 @@
                 </defs>
               </svg>
           </div>
-
-        </a>
+        -->
+          </a>
         </div>
       </section>
-    -->
 
       <section class="container container-contacts">
         <h2 class="visually-hidden">О нас. Контакты</h2>
         <div class="about-us">
           <h3 class="title title-contacts">О нас</h3>
-          <p class="text text-contacts">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом
+          <p class="text text-contacts">Огромный выбор гаджетов не оставит равнодушным<br> гика, который есть в каждом
             из нас.</p>
           <p class="text text-contacts">Мы можем доставить ваш товар в самые отдалённые уголки России транспортными
             компаниями:</p>
@@ -513,7 +518,7 @@
 
         <div class="contacts">
           <h3 class="title title-contacts">Контакты</h3>
-          <p class="text text-contacts">Вы можете забрать товар сами, заехав в наш офис. Заодно сможете проверить
+          <p class="text text-contacts">Вы можете забрать товар сами, заехав в наш офис.<br> Заодно сможете проверить
             работоспособность покупки.</p>
           <h4 class="text text-subtitle">Интернет-магазин «Девайс»</h4>
 
@@ -535,7 +540,7 @@
         <div class="container container-subscribe">
           <h2 class="visually-hidden">Подписка на рассылку</h2>
           <div class="subscribe-text">
-            <h3 class="title title-subscribe">Подпишитесь на рассылку</h3>
+            <h3 class="title title-subscribe">Подпишитесь<br> на рассылку</h3>
             <p class="text text-subscribe">Еженедельный дайджест с обзорами новинок, длительными тест-драйвами,
               распаковками, а также
               акции, спецпредложения и вот это вот всё.</p>
@@ -689,7 +694,8 @@
                         <path d="M2 0H0v2h2V0ZM2 4H0v8h2V4Z" fill="#000" />
                       </svg>
                     </button>
-                    <span class="tooltip-text" role="tooltip" id="tooltip-label-date">Постараемся найти, сколько нужно. Привезём сколько получится по
+                    <span class="tooltip-text" role="tooltip" id="tooltip-label-date">Постараемся найти, сколько нужно.
+                      Привезём сколько получится по
                       требованиям к провозу багажа.
                     </span>
                   </span>
