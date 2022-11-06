@@ -18,8 +18,8 @@
         <div class="user-menu">
           <form class="form" action="https://echo.htmlacademy.ru/" method="post">
 
-              <label for="search"></label>
-              <input class="search" type="search" name="search" id="search" placeholder="Поиск по сайту">
+            <label for="search"></label>
+            <input class="search" type="search" name="search" id="search" placeholder="Поиск по сайту">
 
 
             <button class="text page-header-button" type="submit"><span>Найти</span></button>
@@ -70,15 +70,15 @@
                 <span class="basket">Корзина</span>
               </a>
 
-              <div class="popover popover-cart">
+              <div class="popover popover-cart popover-open">
                 <div class="popover-content">
                   <ul class="cart-items-list">
                     <li class="cart-item">
-                      <div class="cart-wrapper">
+                      <a class="cart-link" href="#" target="_blank">
                         <img class="cart-item-image" src="images/product/product-1-small.png" width="39" height="43"
                           alt="Любительская селфи-палка.">
                         <span class="cart-item-name">Любительская <br> селфи-палка</span>
-                      </div>
+                      </a>
                       <button type="button" class="cart-item-button button">
                         <svg aria-hidden="true" focusable="false" width="10" height="11" fill="none"
                           xmlns="http://www.w3.org/2000/svg">
@@ -91,11 +91,11 @@
                     </li>
 
                     <li class="cart-item">
-                      <div class="cart-wrapper">
+                      <a class="cart-link" href="#" target="_blank">
                         <img class="cart-item-image" src="images/product/product-2-small.png" width="39" height="43"
                           alt="Профессиональная селфи-палка.">
                         <span class="cart-item-name">Профессиональная <br> селфи-палка</span>
-                      </div>
+                      </a>
                       <button type="button" class="cart-item-button button">
                         <svg aria-hidden="true" focusable="false" width="10" height="11" fill="none"
                           xmlns="http://www.w3.org/2000/svg">
@@ -112,7 +112,7 @@
                       <span>Товаров:</span><span> 2</span>
                     </div>
                     <div class="cart-item-summa">
-                      <span>Сумма:</span> 2000 <span class="value">p</span>
+                      <span>Сумма:</span> 2000 <span class="value">₽</span>
                     </div>
                   </div>
                   <button class="button popover-close-button" type="button"><span>Открыть корзину</span>
@@ -130,7 +130,7 @@
             <li class="navigation-item menu">
               <a class="catalog-toggler" href="product.html"><span>Каталог товаров</span>
               </a>
-              <div class="subcatalog-wrapper">
+             <!--<div class="subcatalog-wrapper">-->
                 <ul class="subcatalog">
                   <li class="subcatalog-column">
                     <ul class="subcatalog-list">
@@ -166,7 +166,7 @@
                     </ul>
                   </li>
                 </ul>
-              </div>
+             <!--</div>-->
             </li>
 
             <li class="navigation-item">
@@ -224,10 +224,9 @@
           </div>
 
           <div class="promo-product-slider">
-            <img src="images/promo-products/slider-1.png" width="560" height="560" alt="Квадрокоптер c мощным лазером, замаскированным под
+            <img class="slider-image" src="images/promo-products/slider-1.png" width="560" height="560" alt="Квадрокоптер c мощным лазером, замаскированным под
               стандартную камеру.">
           </div>
-
           <div class="promo-product-content">
             <span class="promo-product-number">01</span>
             <b class="title">Порхает как бабочка, жалит как пчела!</b>
@@ -246,7 +245,6 @@
               </li>
             </ul>
           </div>
-
 
           <div class="promo-product-indicators">
             <ol class="indicators-list">
@@ -267,15 +265,12 @@
               </li>
             </ol>
           </div>
-
-
-
-
         </div>
+
         <!--
         <div class="promo-product ">
           <div class="promo-product-slider">
-            <img src="images/promo-products/slider-2.png" width="560" height="560" alt="Фитнес-браслет".>
+            <img class="slider-image" src="images/promo-products/slider-2.png" width="560" height="560" alt="Фитнес-браслет".>
           </div>
           <div class="promo-product-content">
             <span class="promo-product-number">02</span>
@@ -294,7 +289,7 @@
 
         <div class="promo-product">
           <div class="promo-product-slider">
-            <img src="images/promo-products/slider-3.png" width="560" height="560"
+            <img class="slider-image" src="images/promo-products/slider-3.png" width="560" height="560"
               alt="Палка для селфи длиной восемь метров и весом всего 5 кг".>
           </div>
           <div class="promo-product-content">
@@ -320,8 +315,6 @@
           </div>
         </div>
       -->
-
-
       </section>
 
       <section class="container products-categories">
@@ -524,7 +517,7 @@
 
           <address class="contacts-address">
             <p class="text text-address">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
-            <a class="text text-phone" href="tel:+78128121212">+7 812 812-12-12</a>
+            <a class="text text-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
           </address>
 
           <h4 class="text text-subtitle">Время работы</h4>
@@ -541,14 +534,14 @@
           <h2 class="visually-hidden">Подписка на рассылку</h2>
           <div class="subscribe-text">
             <h3 class="title title-subscribe">Подпишитесь<br> на рассылку</h3>
-            <p class="text text-subscribe">Еженедельный дайджест с обзорами новинок, длительными тест-драйвами,
+            <p class="text text-subscribe">Еженедельный дайджест с обзорами новинок,<br> длительными тест-драйвами,
               распаковками, а также
-              акции, спецпредложения и вот это вот всё.</p>
+              акции,<br> спецпредложения и вот это вот всё.</p>
           </div>
           <div class="subscribe-email">
             <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
               <label for="email"></label>
-              <input type="email" id="email" name="email" placeholder="Ваш e-mail">
+              <input class="email-email" type="email" id="email" name="email" placeholder="Ваш e-mail">
               <button class="button subscribe-button" type="submit"><span>Подписаться</span></button>
             </form>
             <span class="text text-email">
@@ -666,58 +659,61 @@
           <form class="advantage-form" action="https://echo.htmlacademy.ru/" method="post">
             <div class="advantage-form-wrapper">
               <p class="field-group field-group-name">
-                <label class="label-field" for="advantage-name">Ваше имя:</label><br>
+                <label class="label-field" for="advantage-name">Ваше имя:</label>
                 <input class="advantage-form-field field-name" type="text" id="advantage-name" name="advantage-name"
                   placeholder="Введите имя:" required>
               </p>
               <p class="field-group field-group-email">
-                <label class="label-field" for="advantage-email">Ваш e-mail:</label><br>
+                <label class="label-field" for="advantage-email">Ваш e-mail:</label>
                 <input class="advantage-form-field field-email" type="email" id="advantage-email" name="advantage-email"
-                  placeholder="почта" required>
+                  placeholder="почта" required autofocus>
                 <span>Забавный у вас адрес</span>
               </p>
             </div>
 
             <div class="advantage-form-wrapper">
-
               <p class="field-group field-group-product">
-                <label class="label-field" for="advantage-product">Что нужно привезти</label><br>
+                <label class="label-field" for="advantage-product">Что нужно привезти</label>
                 <input class="advantage-form-field field-product" type="text" id="advantage-product"
                   name="advantage-product" placeholder="В свободной форме">
               </p>
               <p class="field-group field-group-amount">
-                <span class="label-field label-field-icon">
-                  <label class="label-field label-field-amount" for="advantage-amount">Количество:</label>
+                <span class="label-field-amount label-field-icon">
+                  <label class="label-field label-field-amount" for="advantage-amount"> Количество:</label>
                   <span class="tooltip">
                     <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-date">
-                      <svg width="2" height="12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <svg class="tooltip-icon" width="2" height="12" fill="currentcolor"
+                        xmlns="http://www.w3.org/2000/svg">
                         <path d="M2 0H0v2h2V0ZM2 4H0v8h2V4Z" fill="#000" />
                       </svg>
                     </button>
                     <span class="tooltip-text" role="tooltip" id="tooltip-label-date">Постараемся найти, сколько нужно.
-                      Привезём сколько получится по
-                      требованиям к провозу багажа.
+                      Привезём сколько получится по требованиям
+                      к провозу багажа.
                     </span>
                   </span>
-
                 </span>
 
                 <input class="advantage-form-field field-amount" type="text" id="advantage-amount"
                   name="advantage-amount" placeholder="1">
-                <input class="button-amount button-amount-plus" type="button">
-                <input class="button-amount button-amount-minus" type="button">
-
+                <button class="button-amount button-amount-minus" type="button">
+                  <svg width="16" height="2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16 0H0v2h16V0Z" fill="#000" />
+                  </svg>
+                  <span class="visually-hidden">Уменьшить на одну позицию</span>
+                </button>
+                <button class="button-amount button-amount-plus" type="button">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16 7H9V0H7V7H0V9H7V16H9V9H16V7Z" fill="black"/>
+                    </svg>
+                  <span class="visually-hidden">Увеличить на одну позицию</span>
+                </button>
               </p>
             </div>
 
             <button class="button advantage-form-button" type="submit">Отправить</button>
 
           </form>
-
-
-
-
-
 
         </section>
       </div>
