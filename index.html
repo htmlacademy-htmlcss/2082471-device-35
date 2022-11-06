@@ -21,7 +21,6 @@
             <label for="search"></label>
             <input class="search" type="search" name="search" id="search" placeholder="Поиск по сайту">
 
-
             <button class="text page-header-button" type="submit"><span>Найти</span></button>
           </form>
 
@@ -130,53 +129,50 @@
             <li class="navigation-item menu">
               <a class="catalog-toggler" href="product.html"><span>Каталог товаров</span>
               </a>
-             <!--<div class="subcatalog-wrapper">-->
-                <ul class="subcatalog">
-                  <li class="subcatalog-column">
-                    <ul class="subcatalog-list">
-                      <li class="subcatalog-item">
-                        <a class="subcatalog-link" href="#"><span>Виртуальная реальность</span></a>
-                      </li>
-                      <li class="subcatalog-item">
-                        <a class="subcatalog-link" href="#"><span>Моноподы для селфи</span></a>
-                      </li>
-                      <li class="subcatalog-item">
-                        <a class="subcatalog-link" href="#"><span>Экшн-камеры</span></a>
-                      </li>
-                    </ul>
+              <ul class="subcatalog">
+                <li class="subcatalog-column">
+                  <ul class="subcatalog-list">
+                    <li class="subcatalog-item">
+                      <a class="subcatalog-link" href="#"><span>Виртуальная реальность</span></a>
+                    </li>
+                    <li class="subcatalog-item">
+                      <a class="subcatalog-link" href="product.html"><span>Моноподы для селфи</span></a>
+                    </li>
+                    <li class="subcatalog-item">
+                      <a class="subcatalog-link" href="#"><span>Экшн-камеры</span></a>
+                    </li>
+                  </ul>
+                </li>
 
-                  </li>
+                <li class="subcatalog-column">
+                  <ul class="subcatalog-list">
+                    <li class="subcatalog-item">
+                      <a class="subcatalog-link" href="#"><span>Фитнес-браслеты</span></a>
+                    </li>
+                    <li class="subcatalog-item">
+                      <a class="subcatalog-link" href="#"><span>Умные часы</span></a>
+                    </li>
+                  </ul>
+                </li>
 
-                  <li class="subcatalog-column">
-                    <ul class="subcatalog-list">
-                      <li class="subcatalog-item">
-                        <a class=" subcatalog-link" href="#"><span>Фитнес-браслеты</span></a>
-                      </li>
-                      <li class="subcatalog-item">
-                        <a class="subcatalog-link" href="#"><span>Умные часы</span></a>
-                      </li>
-                    </ul>
-                  </li>
-
-                  <li class="subcatalog-column">
-                    <ul class="subcatalog-list">
-                      <li class="subcatalog-item">
-                        <a class="subcatalog-link" href=""><span>Квадрокоптеры</span></a>
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
-             <!--</div>-->
+                <li class="subcatalog-column">
+                  <ul class="subcatalog-list">
+                    <li class="subcatalog-item">
+                      <a class="subcatalog-link" href=""><span>Квадрокоптеры</span></a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
             </li>
 
             <li class="navigation-item">
-              <a class="navigation-link navigation-link-1" href="delivery.html"><span>Доставка</span></a>
+              <a class="navigation-link" href="delivery.html"><span>Доставка</span></a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link navigation-link-2" href="guarantee.html"><span>Гарантия</span></a>
+              <a class="navigation-link" href="guarantee.html"><span>Гарантия</span></a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link navigation-link-3" href="contacts.html"><span>Контакты</span></a>
+              <a class="navigation-link" href="contacts.html"><span>Контакты</span></a>
             </li>
           </ul>
         </nav>
@@ -677,8 +673,9 @@
                 <input class="advantage-form-field field-product" type="text" id="advantage-product"
                   name="advantage-product" placeholder="В свободной форме">
               </p>
+
               <p class="field-group field-group-amount">
-                <span class="label-field-amount label-field-icon">
+                <span class="label-field-eeee label-field-icon">
                   <label class="label-field label-field-amount" for="advantage-amount"> Количество:</label>
                   <span class="tooltip">
                     <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-date">
@@ -694,20 +691,22 @@
                   </span>
                 </span>
 
-                <input class="advantage-form-field field-amount" type="text" id="advantage-amount"
-                  name="advantage-amount" placeholder="1">
+
                 <button class="button-amount button-amount-minus" type="button">
-                  <svg width="16" height="2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <!-- <svg width="16" height="2" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M16 0H0v2h16V0Z" fill="#000" />
-                  </svg>
+                  </svg>-->
                   <span class="visually-hidden">Уменьшить на одну позицию</span>
                 </button>
+                <input class="advantage-form-field field-amount" type="text" id="advantage-amount"
+                  name="advantage-amount" placeholder="1">
                 <button class="button-amount button-amount-plus" type="button">
-                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <!--<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M16 7H9V0H7V7H0V9H7V16H9V9H16V7Z" fill="black"/>
-                    </svg>
+                    </svg>-->
                   <span class="visually-hidden">Увеличить на одну позицию</span>
                 </button>
+
               </p>
             </div>
 
