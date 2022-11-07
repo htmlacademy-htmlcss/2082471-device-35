@@ -153,7 +153,7 @@ body {
 /*Пользовательское меню*/
 .user-menu {
   margin: 0 auto;
-  margin-bottom: 30px;
+  margin-bottom: 28px;
   width: 1040px;
   display: flex;
   justify-content: flex-start;
@@ -174,22 +174,16 @@ body {
   text-align: left;
   font-size: 16px;
   background: transparent;
-  outline: 2px solid #000000;
+  border: 2px solid #000000;
   background-image: url("../images/icon-search.svg");
   background-size: 16px 16px;
   background-position: center left 16px;
   background-repeat: no-repeat;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
-  /*outline: none;*/
-  background-color: #af4fff;
+  outline: none;
 }
-/*
-input[type="search" i] {
-  font-size: 16px;
 
-}
-*/
 .search ::placeholder {
   color: #000000;
   font-size: 16x;
@@ -214,21 +208,19 @@ input[type="search" i] {
   display: block;
 }*/
 
-input[type=search]:focus {
+.search:focus {
   outline: 2px solid #af4fff;
   outline-offset: 2px;
-
 }
 
-.search::placeholder:active {
+.search ::placeholder:active {
   opacity: 1;
 }
 
 
-input[type=search]:disabled {
+.search:disabled {
   opacity: 0.3;
 }
-
 
 .page-header-button {
   position: relative;
@@ -275,16 +267,10 @@ input[type=search]:disabled {
   display: block;
 }
 
-.page-header-button:focus {
-  color: #000000;
-  background-color: transparent;
-}
-
 .page-header-button:disabled {
   color: #000000;
   opacity: 0.3;
 }
-
 
 .user-list {
   margin: 0;
@@ -298,24 +284,25 @@ input[type=search]:disabled {
 
 .user-item {
   position: relative;
-  padding: 5px 0;
-  box-sizing: border-box;
+  /* padding: 5px 0;
+  box-sizing: border-box;*/
 }
 
 .user-item:first-child {
-  width: 174px;
+  width: 170px;
 }
 
 .user-item:nth-child(2) {
-  margin-right: 26px;
+  margin-right: 25px;
 }
 
 .user-item:last-child {
-  margin-left: 10px;
+  margin-left: 13px;
 }
 
 .option {
   position: relative;
+  display: block;
   min-height: 30px;
   padding: 5px 0;
   box-sizing: border-box;
@@ -342,6 +329,34 @@ input[type=search]:disabled {
   opacity: 30%;
 }
 
+.option-come-in {
+  padding-left: 25px;
+  box-sizing: border-box;
+  text-align: left;
+  background-image: url("../images/icon-come-in.svg");
+  background-position: center left;
+  background-repeat: no-repeat;
+}
+
+.come-out {
+  opacity: 0.3;
+}
+
+.compare {
+  padding-left: 22px;
+  background-image: url("../images/icon-compare.svg");
+  background-position: center left;
+  background-repeat: no-repeat;
+}
+
+.basket {
+  padding-left: 43px;
+  background-image: url("../images/basket.svg");
+  background-position: top 1px left 15px;
+  background-repeat: no-repeat;
+}
+
+
 .icon {
   position: absolute;
   top: 0;
@@ -353,25 +368,27 @@ input[type=search]:disabled {
 }
 
 .option .icon {
+  top: 0;
+  left: 0;
   right: auto;
   margin: auto 0;
 }
-
+/*
 .come-in {
   padding-left: 25px;
-}
-
+}*/
+/*
 .come-out {
   opacity: 0.3;
-}
-
+}*/
+/*
 .compare {
   padding-left: 22px;
-}
-
+}*/
+/*
 .basket {
   padding-left: 43px;
-}
+}*/
 
 .icon-basket {
   left: 18px;
@@ -441,7 +458,7 @@ input[type=search]:disabled {
   display: block;
   width: 293px;
   box-sizing: border-box;
- /* z-index: 1;*/
+  /* z-index: 1;*/
   font-family: "Raleway", sans-serif;
   font-size: 18px;
   font-style: normal;
@@ -572,6 +589,7 @@ input[type=search]:disabled {
   outline: 2px solid #af4fff;
   outline-offset: 2px;
 }
+
 /*
 .menu:focus-within .subcatalog {
   display: block;
@@ -763,6 +781,9 @@ input[type=search]:disabled {
   justify-content: space-between;
   align-items: flex-end;
 }
+.promo-product-none {
+  display: none;
+}
 
 .promo-product-slider {
   width: 560px;
@@ -820,7 +841,7 @@ input[type=search]:disabled {
 
 .promo-product-number {
   position: absolute;
-  top: -50px;
+  top: -40px;
   right: 49px;
   z-index: -1;
   font-weight: 700;
@@ -1193,7 +1214,7 @@ input[type=search]:disabled {
   padding: 0;
   display: block;
   height: 100%;
-  color:#000000;
+  color: #000000;
   text-decoration: none;
   text-transform: uppercase;
 }
@@ -1809,6 +1830,7 @@ input[type=search]:disabled {
   width: 240px;
   box-sizing: border-box;
 }
+
 /*
 .footer-phone {
   display: block;
@@ -2085,6 +2107,7 @@ input[type=search]:disabled {
 .eee {
   display: flex;
 }
+
 /*
 .button-amount {
   position: absolute;
