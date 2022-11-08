@@ -12,15 +12,14 @@
       <div class="container page-header-container">
         <a class="logo" href="#">
           <img class="logo-image" src="images/logo-black.svg" width="145" height="36"
-            alt="Логотип интернет-магазина Device" .>
+            alt="Логотип интернет-магазина Device.">
         </a>
 
         <div class="user-menu">
           <form class="form" action="https://echo.htmlacademy.ru/" method="post">
-
             <label for="search"></label>
             <input class="search" type="search" name="search" id="search" placeholder="Поиск по сайту">
-
+            <div class="search-focus"></div>
             <button class="text page-header-button" type="submit"><span>Найти</span></button>
           </form>
 
@@ -36,14 +35,14 @@
               </a>
             </li>
             <li class="user-item">
-              <a class="option option-come-out">
+              <a class="option option-come-out come-out-hidden">
                 <span class="out come-out">Выйти</span>
               </a>
             </li>
 
             <li class="user-item">
               <a class="option option-compare" href="#">
-              <!--  <svg class="icon" aria-hidden="true" focusable="false" width="10" height="12" fill="none"
+                <!--  <svg class="icon" aria-hidden="true" focusable="false" width="10" height="12" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
                   <path d="M6 0H4v12h2V0ZM2 4H0v8h2V4ZM10 3H8v9h2V3Z" fill="#000" />
                 </svg>-->
@@ -52,13 +51,13 @@
             </li>
             <li class="user-item">
               <a class="option option-basket" href="#">
-               <!-- <svg class="icon icon-basket" aria-hidden="true" focusable="false" width="16" height="14" fill="none"
+                <!-- <svg class="icon icon-basket" aria-hidden="true" focusable="false" width="16" height="14" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="m15.3 5-3.5.2L8.6.3C8.5.1 8.2 0 8 0c-.2 0-.5.1-.6.3L4.2 5.2H.7c-.4 0-.7.3-.7.7v.2l1.9 6.8c.2.7.7 1.1 1.4 1.1h9.4c.7 0 1.2-.4 1.4-1.1L16 6v-.2c0-.4-.3-.8-.7-.8ZM8 1.9l2.2 3.2H5.9L8 1.9Z"
                     fill="#000" />
                 </svg>-->
-             <svg class="icon" aria-hidden="true" focusable="false" width="21" height="22" viewBox="0 0 21 22"
+                <svg class="icon" aria-hidden="true" focusable="false" width="21" height="22" viewBox="0 0 21 22"
                   fill="none" xmlns="http://www.w3.org/2000/svg">
                   <circle cx="10.5" cy="11" r="10.5" fill="white" />
                   <path
@@ -203,7 +202,7 @@
 
           <div class="promo-product-slider">
             <img class="slider-image" src="images/promo-products/slider-1.png" width="560" height="560" alt="Квадрокоптер c мощным лазером, замаскированным под
-              стандартную камеру.">
+              стандартную камеру, с дальностью полета до 800 м и радиусом поражения 50 м.">
           </div>
           <div class="promo-product-content">
             <span class="promo-product-number">01</span>
@@ -248,12 +247,14 @@
 
         <div class="promo-product promo-product-none">
           <div class="promo-product-slider">
-            <img class="slider-image" src="images/promo-products/slider-2.png" width="560" height="560" alt="Фитнес-браслет".>
+            <img class="slider-image" src="images/promo-products/slider-2.png" width="560" height="560"
+              alt="Фитнес-браслет темно-серого цвета. Эргономичный пластиковый корпус с мотивирующей надписью с улыбающимся смайликом: Я вижу, что ты снова ешь.">
           </div>
           <div class="promo-product-content">
             <span class="promo-product-number">02</span>
             <b class="title">Худеем правильно!</b>
-            <p class="text text-promo-product">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать
+            <p class="text text-promo-product">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать
+              занятия и соблюдать
               диету.</p>
             <a class="button" href="#">Подробнее</a>
             <ul class="promo-product-feature-list">
@@ -268,12 +269,13 @@
         <div class="promo-product promo-product-none">
           <div class="promo-product-slider">
             <img class="slider-image" src="images/promo-products/slider-3.png" width="560" height="560"
-              alt="Палка для селфи длиной восемь метров и весом всего 5 кг".>
+              alt="Селфи-палка может использоваться и как штатив, и как селфи-палка. Длина телескопической штанги достигает 8 метров. Материал изготовления  — карбон. Позволяет крепить все виды фото- и видеоаппаратуры.">
           </div>
           <div class="promo-product-content">
             <span class="promo-product-number">03</span>
             <b class="title">Делай селфи, как Бен Стиллер!</b>
-            <p class="text text-promo-product">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров
+            <p class="text text-promo-product">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь,
+              Карл!) метров
               длиной и весом всего 5 кг.</p>
             <a class="button" href="#">Подробнее</a>
             <ul class="promo-product-feature-list">
@@ -467,6 +469,19 @@
               </svg>
           </div>
         -->
+            <svg class="info" aria-hidden="true" focusable="false" width="2" height="12" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#a)" fill="#000">
+                <path d="M2 0H0v2h2V0ZM2 4H0v8h2V4Z" />
+              </g>
+              <defs>
+                <clipPath id="a">
+                  <path fill="#fff" d="M0 0h2v12H0z" />
+                </clipPath>
+              </defs>
+            </svg>
+
+
           </a>
         </div>
       </section>
@@ -669,32 +684,27 @@
                   </span>
                 </span>
 
+                <input class="advantage-form-field field-amount error-amount" type="text" id="advantage-amount"
+                  name="advantage-amount" placeholder="1">
 
                 <button class="button-amount button-amount-minus" type="button">
-                  <!-- <svg width="16" height="2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <svg width="16" height="2" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M16 0H0v2h16V0Z" fill="#000" />
-                  </svg>-->
+                  </svg>
                   <span class="visually-hidden">Уменьшить на одну позицию</span>
                 </button>
-                <input class="advantage-form-field field-amount" type="text" id="advantage-amount"
-                  name="advantage-amount" placeholder="1">
                 <button class="button-amount button-amount-plus" type="button">
-                  <!--<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M16 7H9V0H7V7H0V9H7V16H9V9H16V7Z" fill="black"/>
-                    </svg>-->
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16 7H9V0H7V7H0V9H7V16H9V9H16V7Z" fill="black" />
+                  </svg>
                   <span class="visually-hidden">Увеличить на одну позицию</span>
                 </button>
-
               </p>
             </div>
-
             <button class="button advantage-form-button" type="submit">Отправить</button>
-
           </form>
-
         </section>
       </div>
-
     </div>
 
   </body>
