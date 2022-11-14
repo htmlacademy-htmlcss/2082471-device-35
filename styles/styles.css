@@ -37,7 +37,6 @@ html {
 body {
   display: flex;
   flex-direction: column;
-  min-width: 1440px;
   min-height: 100%;
   margin: 0;
   padding-top: 20px;
@@ -79,6 +78,8 @@ body {
 .container {
   width: 1160px;
   margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .main-index {
@@ -604,7 +605,8 @@ body {
 }
 
 .option-basket:hover + .popover-open,
-.option-basket:active + .popover-open {
+.option-basket:active + .popover-open,
+.option-basket:focus + .popover-open {
   display: block;
 }
 
