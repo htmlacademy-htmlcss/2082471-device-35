@@ -376,13 +376,13 @@ img {
   text-decoration: none;
 }
 
+.option:hover {
+  opacity: 0.6;
+}
+
 .option:focus {
   outline: 2px solid #af4fff;
   outline-offset: 2px;
-}
-
-.option:hover {
-  opacity: 0.6;
 }
 
 .option:active {
@@ -440,7 +440,6 @@ img {
 .icon-basket {
   left: 18px;
 }
-
 
 .popover {
   position: absolute;
@@ -807,7 +806,6 @@ img {
   outline: 2px solid #af4fff;
   outline-offset: 2px;
 }
-
 
 .promo-products {
   margin-bottom: 70px;
@@ -1221,16 +1219,6 @@ img {
   top: 50%;
   left: 0;
   transform: translateY(-50%);
-}
-
-.services-image-2 {
-  width: 171px;
-  height: 195px;
-}
-
-.services-image-3 {
-  width: 156px;
-  height: 188px;
 }
 
 .advantage {
