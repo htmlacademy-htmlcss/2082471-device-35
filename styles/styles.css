@@ -37,7 +37,7 @@ html {
 body {
   display: flex;
   flex-direction: column;
-  min-width: 1440px;
+  min-width: 1160px;
   min-height: 100%;
   margin: 0;
   padding-top: 20px;
@@ -739,23 +739,10 @@ img {
   text-decoration: none;
 }
 
-
-
-
-
 .menu:hover .catalog-toggler::after,
 .menu:hover .catalog-toggler::before {
   opacity: 1;
 }
-
-
-
-
-
-
-
-
-
 
 .catalog-toggler:focus {
   outline: 2px solid #af4fff;
@@ -797,15 +784,15 @@ img {
   opacity: 1;
 }
 
-.menu:active  .subcatalog {
+.menu-open:active  .subcatalog {
   display: flex;
 }
 
-.menu:active .catalog-toggler::after {
+.menu-open:active .catalog-toggler::after {
   display: none;
 }
 
-.menu:active .catalog-toggler::before {
+.menu-open:active .catalog-toggler::before {
   display: block;
 }
 
